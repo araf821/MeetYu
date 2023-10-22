@@ -1,10 +1,8 @@
-const layout = ({children} : {children : React.ReactNode}) => {
+const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div>
-        <div className="h-20 bg-black text-white text-3xl">
-            Auth Navbar
-        </div>
-        {children}</div>
-  )
-}
-export default layout
+    <div className="mx-auto grid max-w-screen-xl place-items-center min-h-[80dvh] pt-12">
+      {children}
+    </div>
+  );
+};
+export default layout;
